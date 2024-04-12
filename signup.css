@@ -1,21 +1,20 @@
-/* External CSS file styles */
 
 nav {
-            background-color: #555;
-            padding: 10px 20px;
-            text-align: center;
-        }
-nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-        }
-        nav a:hover {
-            background-color: #777;
-        }
-		
+    background-color: #555;
+    padding: 10px 20px;
+    text-align: center;
+}
 
-/* External CSS file styles */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #777;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -36,7 +35,7 @@ header {
     padding: 5px 25px;
     background-color: #fff;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -67,4 +66,52 @@ input[type="password"] {
 
 .btn:hover {
     background-color: #0056b3;
+}
+
+#message {
+    display: none;
+    background: #f1f1f1;
+    color: #000;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "\2714";
+}
+
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "\2716";
+}
+.password-message {
+    margin-top: 5px;
+    display: flex;
+    align-items: center; 
+}
+
+.valid-message, .invalid-message {
+    margin-left: 5px; 
+    display: inline-block; 
 }
