@@ -8,9 +8,9 @@
     <header>
         <h1>Login</h1>
     </header>
-	<nav>
+    <nav>
         <a href="Home.html">Home</a>
-		<a href="about.html">About Us</a>
+        <a href="about.html">About Us</a>
     </nav>
     <div class="container">
         <form action="#" method="post">
@@ -20,7 +20,10 @@
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" required>
+                    <span class="password-toggle" onclick="togglePassword()"></span>
+                </div>
             </div>
             <div class="form-group">
                 <button type="submit" class="btn">Login</button>
@@ -28,10 +31,25 @@
             <div class="form-group">
                 <input type="checkbox" checked="checked" name="remember"> Remember me
             </div>
-			<div class="form-group">
+            <div class="form-group">
                 <p>Don't have an account? <a href="signup.html">Signup</a></p>
             </div>
         </form>
     </div>
+
+    <script>
+        function togglePassword() {
+            var passwordInput = document.getElementById("password");
+            var passwordToggle = document.querySelector(".password-toggle");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                passwordToggle.classList.add("active");
+            } else {
+                passwordInput.type = "password";
+                passwordToggle.classList.remove("active");
+            }
+        }
+    </script>
 </body>
 </html>
