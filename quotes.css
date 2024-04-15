@@ -24,9 +24,13 @@ nav a {
     text-decoration: none;
     margin: 0 10px;
 }
+nav a:hover {
+    background-color: #555;
+}
+
 
 .container {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
 }
