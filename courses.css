@@ -73,15 +73,16 @@ footer {
 
 
 .option {
+    position: relative;
     display: inline-block;
     margin: 20px;
     text-align: center;
-	padding: 10px 20px;
 }
 
 .option a {
     text-decoration: none;
     color: inherit;
+    display: block;
 }
 
 .option img {
@@ -89,14 +90,30 @@ footer {
     height: 200px;
     border-radius: 10%;
     border: 2px solid #007bff; 
-    transition: transform 0.3s ease; 
+    transition: transform 0.2s ease; 
+    position: relative; 
 }
 
 .option img:hover {
     transform: scale(1.1); 
 }
 
-.option p {
-    font-size: 1.2em;
-    margin-top: 10px;
+.text-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -60%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    color: #fff;
+    display: none;
+    z-index: 1; 
+}
+
+.option:hover .text {
+    opacity: 0;
+}
+
+.option:hover .text-info {
+    display: block;
 }
