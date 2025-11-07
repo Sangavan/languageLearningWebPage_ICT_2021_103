@@ -7,12 +7,28 @@ body {
 	
 }
 
+
 header {
     background-color: #333;
     color: #fff;
     padding: 10px 20px;
     text-align: center;
 }
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centers the logo + title together */
+    gap: 15px; /* adds space between logo and text */
+}
+
+    .logo {
+    width: 70px;  /* adjust size as needed */
+    height: 70px;
+    border-radius: 50%; /* makes it circular (optional) */
+    object-fit: cover;  /* keeps the image proportionate */
+}
+
 nav {
             background-color: #555;
             padding: 10px 20px;

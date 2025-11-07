@@ -6,13 +6,16 @@
 </head>
 <body>
     <header>
+    <div class="header-content">
+        <img src="logo.png" alt="Language Learning Logo" class="logo">
         <h1>Welcome to Language Learning</h1>
-        <nav>
-            <a href="Home.html">Home</a>
-            <a href="courses2.html">Courses</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
+    </div>
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
     </header>
     <div class="container">
 		<h2 align="center">Our Courses</h2>
@@ -114,6 +117,25 @@
             if (textInfo) {
                 textInfo.style.display = 'none';
             }
+        }
+    </script>
+
+    <button onclick="scrollToTop()" id="scrollToTopBtn" title="Go to top"><img src="up-arrow.png" alt="Up"></button>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("scrollToTopBtn").style.display = "block";
+            } else {
+                document.getElementById("scrollToTopBtn").style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.body.scrollTop = 0; 
+            document.documentElement.scrollTop = 0; 
         }
     </script>
 	
