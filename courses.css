@@ -26,18 +26,19 @@ header {
     object-fit: cover;  /* keeps logo proportional */
 }
 nav {
-    text-align: center;
-}
-
+            background-color: #555;
+            padding: 10px 20px;
+            text-align: center;
+        }
 nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 20px;
-}
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #777;
+        }
 
-nav a:hover {
-    background-color: #555;
-}
 
 .container {
     max-width: 1200px;
